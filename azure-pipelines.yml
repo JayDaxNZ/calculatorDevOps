@@ -30,4 +30,4 @@ steps:
     failTaskOnFailedTests: true
 - task: PublishCodeCoverageResults@2
   inputs:
-    summaryFileLocation: 'coverage/cobertura-coverage.xml'
+    summaryFileLocation: '**/TEST-*.xml'
