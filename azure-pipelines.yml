@@ -26,9 +26,9 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: '**/TEST-*.xml'
+    testResultsFiles: 'TEST-*.xml'
     failTaskOnFailedTests: true
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: 'Cobertura'
-    summaryFileLocation: '**/TEST-*.xml'
+    summaryFileLocation: 'TEST-*.xml'
